@@ -1,0 +1,9 @@
+{
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm --filter @workspace/paixao-suplementos build",
+  "outputDirectory": "artifacts/paixao-suplementos/dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/((?!assets/).*)", "destination": "/index.html" }
+  ]
+}
